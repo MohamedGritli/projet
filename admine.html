@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!----css3---->
+    <link rel="stylesheet" href="css/admin.css" />
+
+    <!--google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      <div class="body-overlay"></div>
+      <!--------page-content---------------->
+      <div id="content">
+        <!--top--navbar----design--------->
+
+        <div class="top-navbar">
+          <div class="xp-topbar">
+            <!-- Start XP Row -->
+            <div class="row">
+              <!-- Start XP Col -->
+
+              <!-- End XP Col -->
+
+              <!-- Start XP Col -->
+
+              <!-- End XP Col -->
+
+              <!-- Start XP Col -->
+              <div class="col-10 col-md-6 col-lg-8 order-1 order-md-3">
+                <div class="xp-profilebar text-right">
+                  <nav class="navbar p-0">
+                    <ul class="nav navbar-nav flex-row ml-auto">
+                      <li class="dropdown nav-item active">
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                          <span class="material-icons">notifications</span>
+                          <span class="notification">1</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#">vous avez un message non lu</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span class="material-icons">question_answer</span>
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                          <img
+                            src="img/user.jpg"
+                            style="width: 40px; border-radius: 50%"
+                          />
+                          <span class="xp-user-live"></span>
+                        </a>
+                        <ul class="dropdown-menu small-menu">
+                          <li>
+                            <a href="#">
+                              <span class="material-icons">
+                                person_outline </span
+                              >Profile
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="material-icons"> settings </span
+                              >modifier</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#"
+                              ><span class="material-icons"> logout</span>se
+                              deconnecter</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- End XP Col -->
+            </div>
+            <!-- End XP Row -->
+          </div>
+          <div class="xp-breadcrumbbar text-center">
+            <h4 class="page-title">admin</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="sidebar-header">
+        <h3><img src="img/kids.png" class="img-fluid" /></h3>
+        </div>
+      <ul>
+        <li>
+          <span onmouseenter="hoverEnter(0)"></span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(1)"
+            ><i class="fa-regular fa-calendar"></i
+          ></span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(2)"><i class="fas fa-hotel"></i></span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(3)"><i class="fas fa-home"></i></span>
+        </li>
+        <li>
+          <span onmouseenter="hoverEnter(4)"><i class="fas fa-home"></i></span>
+        </li>
+
+        <span class="goo-index" id="goo-index"></span>
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div id="screen_0" class="screen visible">
+        <h1>Ajouter un nouvel élève</h1>
+        <form action="" class="form-position">
+          <label for="" class="form-label">Nom_eleve</label>
+          <input
+            type="text "
+            class="form-control form-color w-100 p-3 h-50"
+            name="nom"
+            placeholder="Nom"
+          />
+
+          <label for="" class="form-label">prénom_eleve</label>
+          <input
+            type="text"
+            class="form-control form-color w-100 p-3 h-50"
+            name="prenom"
+            placeholder="Prenom"
+          />
+
+          <label for="" class="form-label">date de naissance:</label>
+          <input
+            type="date"
+            class="form-control form-color w-100 p-3 h-50"
+            name="date"
+            placeholder="date"
+          />
+
+          <label for="" class="form-label">adresse</label>
+          <input
+            type="text"
+            placeholder="adress"
+            class="form-control form-color w-100 p-3 h-50"
+            name="add"
+            placeholder="adresse"
+          />
+          <div>
+            <label for="" class="form-check-label">sexe:</label>
+          </div>
+          <div class="mb-3">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input ml-2"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+
+              <label class="form-check-label" for="inlineRadio1">Fille</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input ml-2"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">Garçon</label>
+            </div>
+          </div>
+          <div class="text-right">
+            <button type="button" class="btn btn-outline-success">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="screen_1" class="screen">
+        <h1>Ajouter un enseignant</h1>
+        <form action="" class="form-position">
+          <label for="" class="form-label">Nom enseignants :</label>
+          <input
+            type="text "
+            class="form-control form-color w-100 p-2 h-50"
+            name="nom"
+            placeholder="Nom"
+          />
+
+          <label for="" class="form-label">prénom enseignants : </label>
+          <input
+            type="text"
+            class="form-control form-color w-100 p-2 h-50"
+            name="prenom"
+            placeholder="Prenom"
+          />
+
+          <label for="" class="form-label">pseudo enseignants:</label>
+          <input
+            type="text"
+            class="form-control form-color w-100 p-2 h-50"
+            name="pseudo"
+            placeholder="pseudo"
+          />
+
+          <label for="" class="form-label">email : </label>
+          <input
+            type="email"
+            class="form-control form-color w-100 p-2 h-50"
+            name="add"
+            placeholder="aze@gmail.com"
+          /> <label for="" class="form-label"> matiere: </label>
+          <select name="" id="" class="form-control form-color w-100 " aria-label="Default select example">
+            <option selected>id-matiere</option>
+            <option value="1">311</option>
+            <option value="2">312</option>
+            <option value="3">313</option>
+            <option value="3">314</option>
+            <option value="3">215</option>
+            <option value="3">321</option>
+            <option value="3">322</option>
+            <option value="3">323</option>
+            <option value="3">324</option>
+            <option value="3">325</option>
+            <option value="3">331</option>
+            <option value="3">332</option>
+            <option value="3">333</option>
+          </select>
+
+          <label for="" class="form-label">class: </label>
+          <select
+            name=""
+            id=""
+            class="form-control form-color w-100"
+            aria-label="Default select example"
+          >
+            <option selected>class</option>
+            <option value="1">KSC-A1</option>
+            <option value="2">KSC-B1</option>
+            <option value="3">KSC-A2</option>
+            <option value="3">KSC-A3</option>
+            <option value="3">KSC-A4</option>
+            <option value="3">KSC-A5</option>
+          </select>
+          <br />
+          <div class="text-right">
+            <button type="button" class="btn btn-outline-success">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="screen_2" class="screen scr">
+        <h1>Valider les comptes des parents</h1>
+        <table class="table table-hover">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Email</th>
+            <th scope="col">numero de telephon :</th>
+            <th scope="col">date de naissance</th>
+            <th scope="col">valider</th>
+          </tr>
+          <tr>
+            <td scope="row">1</td>
+            <td>amoura</td>
+            <td>zyenb</td>
+            <td>Foamoura@Gmail.Com</td>
+            <td>98764</td>
+            <td>1986-05-08</td>
+            <td>
+              <input
+                type="submit"
+                value="accepter"
+                class="btn btn-outline-success"
+              />
+              <input
+                type="submit"
+                value="refuser"
+                class="btn btn-outline-danger"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="screen_3" class="screen">
+        <h1>emplois</h1>
+        <form action="">
+          <label for="" class="form-label">class: </label>
+          <select
+            name=""
+            id=""
+            class="form-control form-color w-100"
+            aria-label="Default select example"
+          >
+            <option selected>class</option>
+            <option value="1">KSC-A1</option>
+            <option value="2">KSC-B1</option>
+            <option value="3">KSC-A2</option>
+            <option value="3">KSC-A3</option>
+            <option value="3">KSC-A4</option>
+            <option value="3">KSC-A5</option>
+          </select>
+
+          <div class="form-group mt-3">
+            <label for="exampleFormControlFile1 " class="form-label"
+              >L'emplois du tempes :
+            </label>
+            <input
+              type="file"
+              class="form-control-file"
+              id="exampleFormControlFile1"
+            />
+          </div>
+
+          <div class="text-right">
+            <button type="button" class="btn btn-outline-success p-2">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="screen_4" class="screen">
+        <h1>niveau</h1>
+        <form action="">
+          <label for="" class="form-label">libell niveau :</label>
+
+          <select name="" id="" class="form-control form-color w-100">
+            <option selected>niveau</option>
+            <option value="1">NIV 1</option>
+            <option value="2">NIV 2</option>
+            <option value="3">NIV 3</option>
+            <option value="4">NIV 4</option>
+            <option value="5">NIV 5</option>
+          </select>
+
+          <label for="" class="form-label">l'année scolaire :</label>
+          <select
+            name=""
+            id=""
+            class="form-control form-color w-100"
+            placeholder="année scolaire"
+          >
+            <option selected>année scolaire</option>
+            <option value="1">2020/2021</option>
+            <option value="2">2021/2022</option>
+            <option value="3">2022/2023</option>
+            <option value="4">2023/2024</option>
+            <option value="5">2024/2025</option>
+          </select>
+
+          <label for="" class="form-label">class :</label>
+          <select
+            name="class"
+            id=""
+            class="form-control form-select form-select-lg mb-3"
+          >
+            <option selected>class</option>
+            <option value="1">KSC-A1</option>
+            <option value="2">KSC-B1</option>
+            <option value="3">KSC-A2</option>
+            <option value="3">KSC-A3</option>
+            <option value="3">KSC-A4</option>
+            <option value="3">KSC-A5</option>
+          </select>
+
+          <div class="text-right">
+            <button type="button" class="btn btn-outline-success p-2 mt-3">
+              Ajouter
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <svg style="display: none">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+            result="goo"
+          />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      let gooIndex = document.getElementById("goo-index");
+      let hoverEnter = (index) => {
+        gooIndex.style.top = 100 * index + "px";
+        let allScreens = document.querySelectorAll(".screen");
+        allScreens.forEach((e) => {
+          e.classList.remove("visible");
+        });
+        let nowVisible = document.getElementById("screen_" + index);
+        nowVisible.classList.add("visible");
+      };
+    </script>
+  </body>
+</html>
